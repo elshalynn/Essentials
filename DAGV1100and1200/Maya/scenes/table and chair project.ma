@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
-//Name: table and chair project.ma
-//Last modified: Fri, Aug 21, 2026 08:17:36 AM
+//Name: Table and Chair Project.ma
+//Last modified: Fri, Aug 21, 2026 08:28:59 AM
 //Codeset: 1252
 requires maya "2027";
 requires "stereoCamera" "10.0";
@@ -11,23 +11,24 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202607171511-52c21617ee";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "37D1AC9F-4183-5402-DA82-329FE99DC7EC";
+fileInfo "UUID" "C1C27920-4A44-D5A0-C08E-B6B1CC3CA6F8";
+fileInfo "exportedFrom" "C:/Users/erbir/Documents/GitHub/Essentials/DAGV1100and1200/Maya/scenes/table and chair project.ma";
 createNode transform -s -n "persp";
 	rename -uid "64496247-47D8-08ED-D7D0-92A49D6199F7";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 15.003075077236147 6.620454141779553 20.634074804173963 ;
-	setAttr ".r" -type "double3" -2.1914160110317207 27.227781872091949 -9.3535770720008e-13 ;
-	setAttr ".rp" -type "double3" 3.5527136788005009e-15 1.7763568394002505e-15 -3.5527136788005009e-15 ;
-	setAttr ".rpt" -type "double3" 1.1295461121242738e-14 7.3600545291303181e-15 1.7683208752739605e-14 ;
+	setAttr ".t" -type "double3" -23.169178522618189 10.315628197396489 26.271340338879064 ;
+	setAttr ".r" -type "double3" -10.439315118010992 -41.409664577280765 1.7387043624282971e-13 ;
+	setAttr ".rp" -type "double3" 1.1657341229168552e-15 0 0 ;
+	setAttr ".rpt" -type "double3" 8.7673666309672469e-15 7.1338888492887589e-15 2.163725403841979e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "046ABD03-4B8C-E0C1-4A45-88AA889C7B16";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 28.160038536358542;
+	setAttr ".coi" 35.618049035567722;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 2.1284595757866871 5.5436677661446065 -4.3873675435461337 ;
+	setAttr ".tp" -type "double3" 4.7683717241397972e-07 3.8618511335304451 -8.1712414612411521e-14 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "F5FAA453-4693-24D7-D511-8681FD109E00";
@@ -479,7 +480,7 @@ createNode poseInterpolatorManager -n "poseInterpolatorManager";
 	rename -uid "67D61DDA-4A7E-C0B2-7B9F-0EA46463DAB7";
 createNode displayLayerManager -n "layerManager";
 	rename -uid "BC5D6553-4897-1984-09A4-44B96D04EAC1";
-	setAttr ".cdl" 2;
+	setAttr ".cdl" 1;
 	setAttr -s 3 ".dli[1:2]"  1 2;
 	setAttr -s 3 ".dli";
 createNode displayLayer -n "defaultLayer";
@@ -495,7 +496,8 @@ createNode polyCube -n "Floor_Mesh";
 	setAttr ".cuv" 4;
 createNode displayLayer -n "FloorLyr";
 	rename -uid "46E5EE50-4263-A1FB-1EC3-FA9533507722";
-	setAttr ".dt" 1;
+	setAttr ".dt" 2;
+	setAttr ".hpb" yes;
 	setAttr ".ufem" -type "stringArray" 0  ;
 	setAttr ".do" 1;
 createNode polyCube -n "polyCube1";
@@ -932,4 +934,4 @@ connectAttr "TableShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pasted__pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pasted__pasted__pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
-// End of table and chair project.ma
+// End of Table and Chair Project.ma
